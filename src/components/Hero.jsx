@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <div>
@@ -24,9 +26,14 @@ function Hero() {
               something new to watch anytime.
             </p>
 
-            <button className="btn border-none bg-yellow-400 px-6 mt-2 text-base font-semibold text-slate-950 hover:bg-yellow-300">
-              Explore Movies
-            </button>
+            <nav>
+              <Link
+                to="/movies"
+                className="btn border-none bg-amber-400 px-6 mt-2 text-base font-semibold text-slate-950 hover:bg-amber-300"
+              >
+                Explore Movies
+              </Link>
+            </nav>
           </div>
         </div>
       </div>
